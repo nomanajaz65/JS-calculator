@@ -4,59 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .abc{
-            border: 2px solid black;
-            width: 18%;
-            text-align: center;
-            padding: 10px;
-            margin: 10px auto;
-        }
-
-        button{
-            margin: 7px;
-        }
-    </style>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="abc">
+    <div class="abc main">
         <div>
-            <input disabled size="30px" type="text" name="" id="inp">
+            <input disabled size="25" type="text" id="inp">
         </div>
-<br>
         <div>
             <button onclick="foo(7)">7</button>
             <button onclick="foo(8)">8</button>
             <button onclick="foo(9)">9</button>
             <button onclick="foo('+')">+</button>
         </div>
-
-        
         <div>
             <button onclick="foo(4)">4</button>
             <button onclick="foo(5)">5</button>
             <button onclick="foo(6)">6</button>
             <button onclick="foo('-')">-</button>
         </div>
-
-        
         <div>
             <button onclick="foo(1)">1</button>
             <button onclick="foo(2)">2</button>
             <button onclick="foo(3)">3</button>
             <button onclick="foo('/')">/</button>
         </div>
-
-        
         <div>
             <button onclick="foo(0)">0</button>
-            <button onclick="foo(X)">X</button>
+            <button onclick="foo('*')">X</button>
             <button onclick="res()">=</button>
-            <button onclick="clr()">c</button>
-        
+            <button onclick="clr()">C</button>
         </div>
-        
     </div>
     <script src="app.js"></script>
 </body>
